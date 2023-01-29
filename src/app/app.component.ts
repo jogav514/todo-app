@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'todo-app';
+
+  taskList: string[] = ['texto tarea 1', 'texto tarea 2', 'texto tarea 2'];
+
 }
