@@ -1,4 +1,12 @@
+<div>
 <div class="card">
-    <p>{{texto}}</p>
+    <div class="text-wrapper">
+        <input type="checkbox" name="successful-task" id="successful-task" 
+        [(ngModel)]="isTaskSuccessful" (change)="toggleTaskSuccessful()" />
+        <p [ngClass]="{'crossOut': isTaskSuccessful}">{{text}}</p>
+        <button (click)="delete()">Delete</button>
+    </div>
+    
+</div>
 
 </div>

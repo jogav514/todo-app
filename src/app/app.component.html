@@ -1,6 +1,4 @@
 <h1>ToDo APP</h1>
 <div class="task-list">
-  <app-task *ngFor="let task of taskList"
-  [texto]="task"
-  ></app-task>
-</div>
+  <app-task *ngFor="let task of taskList; let i=index" [text]="task" (onDelete)="deleteTask(i)"></app-task>
+  </div>
